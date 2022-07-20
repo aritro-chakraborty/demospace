@@ -4,17 +4,19 @@
 }
 
 .header {
-    background-color: #436cf6;
+    background-color: #0036e9;
     text-align: center;
     color: chartreuse;
-    font-size: 450%;
+    font-size: 50px;
     padding: 60px;
+    height:28vh;
   }
 
   .topnav {
     overflow: hidden;
     background-color: rgb(127, 255, 0);
     text-align: center;
+    height:5vh;
   }
   
   /* Style the topnav links */
@@ -31,7 +33,7 @@
   .column-left {
     float: left;
     width: 30%;
-    height: 50vh;
+    height:50vh;
     padding: 15px;
     background-color: rgb(91, 34, 124);
     color: aqua;
@@ -58,10 +60,10 @@
     text-align: center;
     font-family:sans-serif;
     color: aqua;
-    font-size: 60px;
-    position: fixed;
+    font-size: 40px;
     height: 17vh;
     left: 0;
     bottom: 0;
     width: 100%;
+    padding-top: 20px;
   }
