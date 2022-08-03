@@ -1,0 +1,35 @@
+class person:
+    def __init__(self,name):
+        self.name=name
+        self.is_admin=0
+        self.is_developer=0
+    def get_name(self):
+        return self.name
+    def check_admin(self):
+        return self.is_admin
+    def check_developer(self):
+        return self.is_developer
+class admin(person):
+      def __init__(self,name):
+        #  self.name=name
+         super().__init__(name)
+         self.is_admin=1
+
+class developer(person):
+    def __init__(self,name):
+        # self.name=name
+        super().__init__(name)
+        self.is_developer=1
+
+p1=person("Bob")
+
+ad1=admin("john")
+
+dev1=developer("Alice")
+
+
+print(p1.get_name()," -> dev ", p1.check_developer()," -> admin ",p1.check_admin())
+
+print(ad1.get_name()," -> admin ", ad1.check_admin()," -> dev ", ad1.check_developer())
+
+print(dev1.get_name()," -> admin ", dev1.check_admin()," -> dev ", dev1.check_developer())
